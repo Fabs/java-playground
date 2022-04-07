@@ -11,9 +11,9 @@ public class BitFunTest {
 
     @Test
     void verifyFormatAssumptions() {
-//        assertEquals("10",
-//            Integer.toBinaryString(10));
-        assertEquals(Integer.toBinaryString((10 ^ (10 - 1))),
-            Integer.toBinaryString(-10));
+        assertEquals("1010",
+            Integer.toBinaryString(10));
+        assertEquals("1111",
+            Integer.toBinaryString((1000 ^ (1000 - 1))));
     }
 }
